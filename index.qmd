@@ -18,4 +18,4 @@ This page provides internal documentation for performing standard bioinformatics
 
 ```
 
-`r fontawesome::fa("github", "black")` [Natasa Anastasiadou](https://github.com/natanast)   `r fontawesome::fa("github", "black")` [Nikos Pechlivanis](https://github.com/npechl)
+`r fontawesome::fa("github", "black")` [Nikos Pechlivanis](https://github.com/npechl)   `r fontawesome::fa("github", "black")` [Natasa Anastasiadou](https://github.com/natanast)
