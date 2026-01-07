@@ -31,3 +31,7 @@ List of common **errors** found in metadata:
 -   Special characters (`!`, `%`, `@`, `#`, `(`, `)`, `/`)
 
 -   Different names for the same sample (`CTRL1`, `Ctrl1`, `control_1`)
+
+## ✅ The Correct Naming Rules
+
+Sample names **MUST**:
