@@ -160,13 +160,18 @@ Unix commands let you:</p>
 <ul>
 <li><code>pwd</code> (Print Working Directory): Shows your current location.</li>
 <li><code>ls</code> (List): Shows files in the current folder.</li>
-<li><code>cd [folder]</code> (Change Directory): Move into a folder.</li>
+<li><code>cd folder/</code> (Change Directory): Move into a folder.</li>
 <li><code>cd ..</code>: Move one level up.</li>
 <li><code>cd ~</code>: Go to your home directory.</li>
-<li><code>mkdir [name]</code>(Make Directory): Create a new folder.</li>
-<li><code>cp [file] [folder]</code>: Copy file from the first argument (source) to the last (destination).</li>
-<li><code>mv [file] [folder]</code>: Move file from the first argument (source) to the last (destination).</li>
-<li><code>rm [file]</code>: Remove file. Caution: Removed files are <strong>gone</strong>.</li>
+<li><code>mkdir name</code> (Make Directory): Create a new folder.</li>
+</ul>
+</section>
+<section id="copy-and-move-files" class="level2">
+<h2 class="anchored" data-anchor-id="copy-and-move-files">Copy and move files</h2>
+<ul>
+<li><code>cp file folder/</code>: Copy file from the first argument (source) to the last (destination).</li>
+<li><code>mv file folder/</code>: Move file from the first argument (source) to the last (destination).</li>
+<li><code>rm file</code>: Remove file. <strong>Caution</strong>: There is no “Trash Can”, Removed files are <strong>gone</strong>.</li>
 </ul>
 </section>
 <section id="inspecting-files" class="level2">
@@ -175,6 +180,23 @@ Unix commands let you:</p>
 <ul>
 <li><code>head -n 20 file.txt</code>: See the first 20 lines.</li>
 <li><code>tail -n 20 file.txt</code>: See the last 20 lines (useful for checking if a log file finished correctly).</li>
+</ul>
+</section>
+<section id="working-with-compressed-data" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-compressed-data">Working with Compressed Data</h2>
+<p>Bioinformatics data is almost always compressed (<code>.gz</code>) to save space.</p>
+<ul>
+<li><code>zcat name.fastq.gz | head</code>: View the top of a compressed fastq file.</li>
+<li><code>gzip file</code>: Compresses a file and adds a <code>.gz</code> extension.</li>
+<li><code>gunzip file.gz</code>: Decompresses the file.</li>
+</ul>
+</section>
+<section id="counting-and-searching" class="level2">
+<h2 class="anchored" data-anchor-id="counting-and-searching">Counting and Searching</h2>
+<ul>
+<li><code>wc -l file.txt</code>: count lines.</li>
+<li><code>grep "searchterm" file.txt</code>: find lines containing a word.</li>
+<li><code>grep -c "^@" file.fastq</code>: Count how many sequence headers (starting with <code>@</code>) are in a file.</li>
 </ul>
 
 

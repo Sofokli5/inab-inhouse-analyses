@@ -102,7 +102,7 @@
     "href": "qmd/unix.html#navigation-where-am-i",
     "title": "Basic Unix Commands",
     "section": "Navigation (Where am I?)",
-    "text": "Navigation (Where am I?)\nBefore you can analyze data, you must know how to move around the folders (directories).\n\npwd (Print Working Directory): Shows your current location.\nls (List): Shows files in the current folder.\ncd [folder] (Change Directory): Move into a folder.\ncd ..: Move one level up.\ncd ~: Go to your home directory.\nmkdir [name](Make Directory): Create a new folder.\ncp [file] [folder]: Copy file from the first argument (source) to the last (destination).\nmv [file] [folder]: Move file from the first argument (source) to the last (destination).\nrm [file]: Remove file. Caution: Removed files are gone."
+    "text": "Navigation (Where am I?)\nBefore you can analyze data, you must know how to move around the folders (directories).\n\npwd (Print Working Directory): Shows your current location.\nls (List): Shows files in the current folder.\ncd folder/ (Change Directory): Move into a folder.\ncd ..: Move one level up.\ncd ~: Go to your home directory.\nmkdir name (Make Directory): Create a new folder."
   },
   {
     "objectID": "qmd/unix.html#inspecting-files",
@@ -117,5 +117,33 @@
     "title": "INAB in-house analyses",
     "section": "Author",
     "text": "Author\n Natasa Anastasiadou"
+  },
+  {
+    "objectID": "qmd/unix.html#copy-and-move-files",
+    "href": "qmd/unix.html#copy-and-move-files",
+    "title": "Basic Unix Commands",
+    "section": "Copy and move files",
+    "text": "Copy and move files\n\ncp file folder/: Copy file from the first argument (source) to the last (destination).\nmv file folder/: Move file from the first argument (source) to the last (destination).\nrm file: Remove file. Caution: There is no “Trash Can”, Removed files are gone."
+  },
+  {
+    "objectID": "qmd/unix.html#working-with-compressed-data",
+    "href": "qmd/unix.html#working-with-compressed-data",
+    "title": "Basic Unix Commands",
+    "section": "Working with Compressed Data",
+    "text": "Working with Compressed Data\nBioinformatics data is almost always compressed (.gz) to save space.\n\nzcat name.fastq.gz | head: View the top of a compressed fastq file.\ngzip file: Compresses a file and adds a .gz extension.\ngunzip file.gz: Decompresses the file."
+  },
+  {
+    "objectID": "qmd/unix.html#counting-and-searching",
+    "href": "qmd/unix.html#counting-and-searching",
+    "title": "Basic Unix Commands",
+    "section": "Counting and Searching",
+    "text": "Counting and Searching\n\nwc -l file.txt: count lines.\ngrep \"searchterm\" file.txt: find lines containing a word.\ngrep -c \"^@\" file.fastq: Count how many sequence headers (starting with @) are in a file."
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "INAB in-house analyses",
+    "section": "Getting Started",
+    "text": "Getting Started\nThe goal of this guide is to bridge the gap between wet-lab experiments and dry-lab results.\nYou will learn:\n\nhow to prepare your data correctly\nhow to use basic Unix commands\nhow to run analysis\n\n\nYour Roadmap\n\nData & Metadata: Learn the “Golden Rules” of file naming and organization.\nUnix Commands: Basic commands to navigate folders, inspect files, and prepare data for analysis.\nAnalysis Pipelines: Standardized workflows for INAB projects."
   }
 ]

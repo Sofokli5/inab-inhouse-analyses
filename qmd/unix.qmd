@@ -24,15 +24,18 @@ folders (directories).
 
 -   `pwd` (Print Working Directory): Shows your current location.
 -   `ls` (List): Shows files in the current folder.
--   `cd [folder]` (Change Directory): Move into a folder.
+-   `cd folder/` (Change Directory): Move into a folder.
 -   `cd ..`: Move one level up.
 -   `cd ~`: Go to your home directory.
--   `mkdir [name]`(Make Directory): Create a new folder.
--   `cp [file] [folder]`: Copy file from the first argument (source) to
-    the last (destination).
--   `mv [file] [folder]`: Move file from the first argument (source) to
-    the last (destination).
--   `rm [file]`: Remove file. Caution: Removed files are **gone**.
+-   `mkdir name` (Make Directory): Create a new folder.
+
+## Copy and move files
+
+-   `cp file folder/`: Copy file from the first argument (source) to the
+    last (destination).
+-   `mv file folder/`: Move file from the first argument (source) to the
+    last (destination).
+-   `rm file`: Remove file. **Caution**: There is no "Trash Can", Removed files are **gone**.
 
 ## Inspecting Files
 
@@ -42,3 +45,19 @@ Notepad. It will crash. Use these instead:
 -   `head -n 20 file.txt`: See the first 20 lines.
 -   `tail -n 20 file.txt`: See the last 20 lines (useful for checking if
     a log file finished correctly).
+
+## Working with Compressed Data
+
+Bioinformatics data is almost always compressed (`.gz`) to save space.
+
+-   `zcat name.fastq.gz | head`: View the top of a compressed fastq
+    file.
+-   `gzip file`: Compresses a file and adds a `.gz` extension.
+-   `gunzip file.gz`: Decompresses the file.
+
+## Counting and Searching
+
+-   `wc -l file.txt`: count lines.
+-   `grep "searchterm" file.txt`: find lines containing a word.
+-   `grep -c "^@" file.fastq`: Count how many sequence headers (starting
+    with `@`) are in a file.

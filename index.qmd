@@ -12,6 +12,22 @@ This page provides internal documentation for performing standard bioinformatics
 
 > **Note:** This document is for internal use only.
 
+## Getting Started
+
+The goal of this guide is to bridge the gap between wet-lab experiments and dry-lab results.
+
+You will learn:
+
+-   how to prepare your data correctly
+-   how to use basic Unix commands
+-   how to run analysis
+
+### Your Roadmap
+
+1.  [**Data & Metadata**](qmd/data_cleaning.qmd)**:** Learn the "Golden Rules" of file naming and organization.
+2.  [**Unix Commands**](qmd/unix.qmd)**:** Basic commands to navigate folders, inspect files, and prepare data for analysis.
+3.  [**Analysis Pipelines**](qmd/analysis.qmd)**:** Standardized workflows for INAB projects.
+
 ## Author
 
 ```{r}
