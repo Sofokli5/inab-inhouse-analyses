@@ -47,5 +47,40 @@
     "title": "Data & Metadata",
     "section": "✅ The Correct Naming Rules",
     "text": "✅ The Correct Naming Rules\nSample names MUST:"
+  },
+  {
+    "objectID": "qmd/data_cleaning.html",
+    "href": "qmd/data_cleaning.html",
+    "title": "Data & Metadata",
+    "section": "",
+    "text": "Bioinformatics tools are very strict about filenames, sample IDs, and metadata.\nEven one wrong character can:\n\nbreak pipelines\nmismatch samples\ncause failed downstream analyses (e.g. DESeq2, Seurat)\nmake reproducibility impossible\n\nSo, we require standardized naming."
+  },
+  {
+    "objectID": "qmd/data_cleaning.html#data-cleaning",
+    "href": "qmd/data_cleaning.html#data-cleaning",
+    "title": "Data & Metadata",
+    "section": "",
+    "text": "Bioinformatics tools are very strict about filenames, sample IDs, and metadata.\nEven one wrong character can:\n\nbreak pipelines\nmismatch samples\ncause failed downstream analyses (e.g. DESeq2, Seurat)\nmake reproducibility impossible\n\nSo, we require standardized naming."
+  },
+  {
+    "objectID": "qmd/data_cleaning.html#common-naming-problems",
+    "href": "qmd/data_cleaning.html#common-naming-problems",
+    "title": "Data & Metadata",
+    "section": "❌ Common Naming Problems",
+    "text": "❌ Common Naming Problems\nList of common errors found in file names metadata:\n\nDuplicate sample names (e.g., sample1 appearing twice)\nGreek characters (α, β, Α, Τ)\nSpaces in names (Sample 1, Control rep 2)\nSpecial characters (!, %, @, #, (, ), /)\nDifferent names for the same sample (CTRL1, Ctrl1, control_1)"
+  },
+  {
+    "objectID": "qmd/data_cleaning.html#the-correct-naming-rules",
+    "href": "qmd/data_cleaning.html#the-correct-naming-rules",
+    "title": "Data & Metadata",
+    "section": "✅ The Correct Naming Rules",
+    "text": "✅ The Correct Naming Rules\nSample names MUST:\n\nuse English letters only\nnever change file names between FASTQ - metadata - results\nuse only letters, numbers, and underscores (A–Z, a–z, 0–9, _)\n✔ A01_Rep1\n❌A01-Rep(1)\nunique names\nbe consistent across files and folders"
+  },
+  {
+    "objectID": "qmd/data_cleaning.html#naming-rules",
+    "href": "qmd/data_cleaning.html#naming-rules",
+    "title": "Data & Metadata",
+    "section": "✅ Naming Rules",
+    "text": "✅ Naming Rules\nSample names MUST:\n\nuse English letters only\nnever change file names between FASTQ - metadata - results\nuse only letters, numbers, and underscores (A–Z, a–z, 0–9, _)\n✔ A01_Rep1\n❌A01-Rep(1)\nunique names\nbe consistent across files and folders"
   }
 ]

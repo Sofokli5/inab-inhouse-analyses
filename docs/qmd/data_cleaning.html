@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unix Commands – INAB In-House Analysis</title>
+<title>Data &amp; Metadata – INAB In-House Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Unix Commands</h1>
+<h1 class="title">Data &amp; Metadata</h1>
 </div>
 
 
@@ -144,8 +144,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+<p>Bioinformatics tools are very strict about filenames, sample IDs, and metadata.</p>
+<p>Even one wrong character can:</p>
+<ul>
+<li><p>break pipelines</p></li>
+<li><p>mismatch samples</p></li>
+<li><p>cause failed downstream analyses (e.g.&nbsp;DESeq2, Seurat)</p></li>
+<li><p>make reproducibility impossible</p></li>
+</ul>
+<p>So, we require <strong>standardized naming</strong>.</p>
+</section>
+<section id="common-naming-problems" class="level2">
+<h2 class="anchored" data-anchor-id="common-naming-problems">❌ Common Naming Problems</h2>
+<p>List of common <strong>errors</strong> found in file names metadata:</p>
+<ul>
+<li><p>Duplicate sample names (e.g., <code>sample1</code> appearing twice)</p></li>
+<li><p>Greek characters (<code>α</code>, <code>β</code>, <code>Α</code>, <code>Τ</code>)</p></li>
+<li><p>Spaces in names (<code>Sample 1</code>, <code>Control rep 2</code>)</p></li>
+<li><p>Special characters (<code>!</code>, <code>%</code>, <code>@</code>, <code>#</code>, <code>(</code>, <code>)</code>, <code>/</code>)</p></li>
+<li><p>Different names for the same sample (<code>CTRL1</code>, <code>Ctrl1</code>, <code>control_1</code>)</p></li>
+</ul>
+</section>
+<section id="naming-rules" class="level2">
+<h2 class="anchored" data-anchor-id="naming-rules">✅ Naming Rules</h2>
+<p>Sample names <strong>MUST</strong>:</p>
+<ul>
+<li><p>use English letters <strong>only</strong></p></li>
+<li><p><strong>never</strong> change file names between FASTQ - metadata - results</p></li>
+<li><p>use only letters, numbers, and underscores <strong>(A–Z, a–z, 0–9, _)</strong></p>
+<p>✔ <code>A01_Rep1</code></p>
+<p>❌<code>A01-Rep(1)</code></p></li>
+<li><p>unique names</p></li>
+<li><p>be consistent across files and folders</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

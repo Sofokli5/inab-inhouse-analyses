@@ -12,7 +12,7 @@ Even one wrong character can:
 
 -   mismatch samples
 
--   cause failed downstream analyses (DESeq2, Seurat)
+-   cause failed downstream analyses (e.g. DESeq2, Seurat)
 
 -   make reproducibility impossible
 
@@ -20,7 +20,7 @@ So, we require **standardized naming**.
 
 ## ❌ Common Naming Problems
 
-List of common **errors** found in metadata:
+List of common **errors** found in file names metadata:
 
 -   Duplicate sample names (e.g., `sample1` appearing twice)
 
@@ -32,6 +32,20 @@ List of common **errors** found in metadata:
 
 -   Different names for the same sample (`CTRL1`, `Ctrl1`, `control_1`)
 
-## ✅ The Correct Naming Rules
+## ✅ Naming Rules
 
 Sample names **MUST**:
+
+-   use English letters **only**
+
+-   **never** change file names between FASTQ - metadata - results
+
+-   use only letters, numbers, and underscores **(A–Z, a–z, 0–9, \_)**
+
+    ✔ `A01_Rep1`
+
+    ❌`A01-Rep(1)`
+
+-   unique names
+
+-   be consistent across files and folders
