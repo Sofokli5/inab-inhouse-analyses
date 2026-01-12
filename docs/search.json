@@ -159,5 +159,12 @@
     "title": "Welcome",
     "section": "Contributing",
     "text": "Contributing\nYour input is invaluable - whether it’s suggesting a new chart/analysis or reporting a bug, we welcome and greatly appreciate your feedback!\nFeel free to open a GitHub issue or contact us via inab.bioinformatics@lists.certh.gr."
+  },
+  {
+    "objectID": "qmd/data_cleaning.html#project-documentation-the-readme-file",
+    "href": "qmd/data_cleaning.html#project-documentation-the-readme-file",
+    "title": "Data & Metadata",
+    "section": "📄 Project Documentation (The README file)",
+    "text": "📄 Project Documentation (The README file)\nStandardized names are only useful if we know the context of the project. To prevent the loss of critical project details (who did what a year later), every project folder MUST contain a README file.\n\nRecommended Template\nCreate a file named README.txt in your main project folder and use this structure:\nProject: Short Title\nProject owner: Name\nBioinformatician: Name\nDate Started: YYYY-MM-DD\nStatus: In Progress / Completed / Archived\nExperimental Details: A brief description with the contex of the project (e.g. Comparisons, Groups)"
   }
 ]

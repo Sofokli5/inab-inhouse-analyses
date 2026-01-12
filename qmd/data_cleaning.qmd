@@ -49,3 +49,23 @@ Sample names **MUST**:
 -   unique names
 
 -   be consistent across files and folders
+
+## 📄 Project Documentation (The README file)
+
+Standardized names are only useful if we know the context of the project. To prevent the loss of critical project details (who did what a year later), every project folder **MUST** contain a `README` file.
+
+### Recommended Template
+
+Create a file named `README.txt` in your main project folder and use this structure:
+
+**Project:** Short Title
+
+**Project owner:** Name
+
+**Bioinformatician:** Name
+
+**Date Started:** YYYY-MM-DD
+
+**Status:** In Progress / Completed / Archived
+
+**Experimental Details:** A brief description with the contex of the project (e.g. Comparisons, Groups)
