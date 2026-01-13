@@ -24,13 +24,13 @@ execute:
 
 4.  Move to your working folder:
 
-    o In case there are only samples from your lab run:
+    o In case there are [only samples from your lab]{.underline} run:
 
     ``` bash
     cd /mnt/new_home/stamatopoulos_research/
     ```
 
-    o In case there are samples from multiple labs run:
+    o In case there are [samples from multiple labs]{.underline} run:
 
     ``` bash
     cd /mnt/new_home/illumina_common_fastq
