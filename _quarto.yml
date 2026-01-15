@@ -27,7 +27,7 @@ website:
           - text: RNAseq analysis
             href: qmd/rnaseq.qmd
           - text: ENA
-            href: qmd/ena.qmd
+            href: qmd/ena_deposit.qmd
           - text: ERGO-ii
             href: qmd/ergo.qmd
         
