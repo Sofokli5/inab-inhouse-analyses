@@ -6,7 +6,7 @@ execute:
 
 ## How to run **RNAseq analyis** in the computational infrastructure of INAB
 
-### Steps to run fastqc analysis:
+### Steps to run RNAseq analysis:
 
 1.  Log in to the appropriate server:
 
@@ -44,7 +44,7 @@ execute:
 7.  Create a SampleList (you have to update with the right path to your fastq files), for example:
 
     ``` bash
-    ls -la /mnt/new_home/stamatopoulos_research/RNAseq_2025_05_21 | awk '{print $9}' | awk -F "_R" '{print $1}' | sort | uniq     > SampleList
+    ls -la /mnt/new_home/stamatopoulos_research/RNAseq_2025_05_21 | awk '{print $9}' | awk -F "_R" '{print $1}' | sort | uniq > SampleList
     ```
 
 8.  Remove samples that should not be analyzed:
@@ -66,12 +66,12 @@ execute:
 9.  Run the analysis (you have to **update** with the right path):
 
     ``` bash
-    nohup bash runSTAR.sh\
-    /mnt/new_home/stamatopoulos_research/RNAseq_2025_05_21\
-    SampleList\
-    /mnt/new_home/bio_tmp/HSapRefData/hg38/gencode/star\
-    /mnt/new_home/bio_tmp/HSapRefData/hg38/gencode/gencode.v47.primary_assembly.basic.annotation.gtf\
-    16\
+    nohup bash runSTAR.sh \
+    /mnt/new_home/stamatopoulos_research/RNAseq_2025_05_21 \
+    SampleList \
+    /mnt/new_home/bio_tmp/HSapRefData/hg38/gencode/star \
+    /mnt/new_home/bio_tmp/HSapRefData/hg38/gencode/gencode.v47.primary_assembly.basic.annotation.gtf \
+    16 \
     &
     ```
 
